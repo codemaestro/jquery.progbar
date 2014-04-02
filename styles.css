@@ -1,0 +1,133 @@
+body {
+	text-align: center;
+	font-family: arial;
+	background-color: #0081c6;
+}
+.bodytext {
+	display: block; clear: both; float: none;
+	text-align: left;
+	width: 520px;
+	margin: 2em auto;
+	background-color: #fff;
+}
+h2 {
+	margin-bottom: 0;
+}
+h3 {
+	display: block; clear: left; float: left; width: 100%;
+	font-size: 1em;
+	margin-top: 1em;margin-bottom: 0;
+}
+
+.cov-progressbar {
+	display: block; list-style: none;
+	margin: 0 0 1em; padding: 0;
+	float: left;
+	width: 100%;
+	white-space: nowrap;
+	background: transparent url( './cov-progressbar.png' ) 0 -252px no-repeat;
+}
+
+.cov-progressbar li {
+	display: block; float: left;
+	height: 24px;
+}
+
+.cov-progressbar li span,
+.cov-progressbar li a {
+	display: block; float: left; width: 100%;
+	margin: 0; padding: 4px 4px 5px 28px;
+	font-size: 12px; font-weight: bold;
+	color: #fff;
+	text-decoration: none;
+	white-space: nowrap;
+	background: #bdbbac url( './cov-progressbar.png' ) 0 -180px no-repeat;
+}
+.cov-progressbar li.first span,
+.cov-progressbar li.first a  {
+	margin-left: 8px; padding-left: 6px;
+	background-position: 0 0;
+	background-color: #5d79a1;
+}
+.cov-progressbar li.active span,
+.cov-progressbar li.active a {
+	background-position: 0 -216px;
+	background-color: #5d79a1;
+}
+.cov-progressbar li.next span,
+.cov-progressbar li.next a {
+	background-position: 0 -144px;
+}
+.cov-progressbar li.final {
+	width: 40px;
+	overflow: hidden;
+}
+.cov-progressbar li.final span,
+.cov-progressbar li.final a {
+	background-color: transparent;
+	background-position: 0 -36px;
+	text-indent: -999em; padding-right: 12px;
+}
+
+.cov-progressbar li.final.next span,
+.cov-progressbar li.final.next a {
+	background-position: 0 -72px;
+}
+
+.cov-progressbar li.final.complete span,
+.cov-progressbar li.final.complete a {
+	background-position: 0 -108px;
+}
+
+
+@media screen and (max-width: 620px) {
+/* show first and last step items only */
+body ul.cov-progressbar  {
+	width: 97%;
+	background: none;
+	padding: 0;
+}
+body .cov-progressbar li {
+	display: none;
+}
+body .cov-progressbar li.current {
+	display: block;
+	width: 100%;
+	border-radius: 6px;
+	font-size: 1.1em;
+	line-height: 1;
+}
+/* backgrounds and links */
+body .cov-progressbar li.first.current span,
+body .cov-progressbar li.current span,
+body .cov-progressbar li.first.current a,
+body .cov-progressbar li.current a {
+	width: 100%; margin: 0;
+	background-position: 100% -72px;
+	padding: .17em 0 .17em .5em;
+	border-color: transparent;
+	border-radius: 6px;
+	font-size: 1em;
+}
+body .cov-progressbar li.final span,
+body .cov-progressbar li.final.next span,
+body .cov-progressbar li.final.complete span,
+body .cov-progressbar li.final a,
+body .cov-progressbar li.final.next a,
+body .cov-progressbar li.final.complete a {
+	background-position: 100% -108px;
+}
+
+body .cov-progressbar li.final.complete {
+	overflow: visible;
+}
+body .cov-progressbar li.final.complete span,
+body .cov-progressbar li.final.complete a {
+	background-color: #5d79a1;
+	text-indent: 0;
+}
+
+body .bodytext {
+	width: 100%;
+}
+}

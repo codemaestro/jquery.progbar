@@ -1,0 +1,188 @@
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Progress bar using CSS and jQuery</title>
+
+<link href="./styles.css" rel="stylesheet" type="text/css" />
+
+</head>
+
+<body>
+<div class="bodytext">
+<h1>Sample progress bar</h1>
+<p>This progress bar uses purely CSS to control the appearance. The progress bar works fine without jQuery, but the width then becomes dependent on the text of the bar labels.</p>
+
+<ul>
+  <li><strong>No jQuery version</strong> (this one)</li>
+  <li><a href="index.html">jQuery version</a></li>
+</ul>
+
+<p>Note: the white area is a column 520px wide, and scales to 100% width below 620px.</p>
+
+<h2>Without links</h2>
+<h3>Step 1 (start)</h3>
+<ul class="cov-progressbar">
+  <li class="first current"><span>Start</span></li>
+  <li class="next"><span>Enter your information</span></li>
+  <li><span>Payment options</span></li>
+  <li><span>Confirm</span></li>
+  <li class="final"><span>Completed</span></li>
+</ul>
+
+<h3>Step 2</h3>
+<ul class="cov-progressbar">
+  <li class="first"><span>Start</span></li>
+  <li class="active current"><span>Enter your information</span></li>
+  <li class="next"><span>Payment options</span></li>
+  <li><span>Confirm</span></li>
+  <li class="final"><span>Completed</span></li>
+</ul>
+
+<h3>Step 3</h3>
+<ul class="cov-progressbar">
+  <li class="first"><span>Start</span></li>
+  <li class="active"><span>Enter your information</span></li>
+  <li class="active current"><span>Payment options</span></li>
+  <li class="next"><span>Confirm</span></li>
+  <li class="final"><span>Completed</span></li>
+</ul>
+
+<h3>Step 4</h3>
+<ul class="cov-progressbar">
+  <li class="first"><span>Start</span></li>
+  <li class="active"><span>Enter your information</span></li>
+  <li class="active"><span>Payment options</span></li>
+  <li class="active current"><span>Confirm</span></li>
+  <li class="final next"><span>Completed</span></li>
+</ul>
+
+<h3>Step 5 (complete)</h3>
+<ul class="cov-progressbar">
+  <li class="first"><span>Start</span></li>
+  <li class="active"><span>Enter your information</span></li>
+  <li class="active"><span>Payment options</span></li>
+  <li class="active"><span>Confirm</span></li>
+  <li class="final complete current"><span>Completed</span></li>
+</ul>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+
+<h2>With links</h2>
+<h3>Step 1 (start)</h3>
+<ul class="cov-progressbar">
+  <li class="first current"><a href="#">Start</a></li>
+  <li class="next"><a href="#">Enter your information</a></li>
+  <li><a href="#">Payment options</a></li>
+  <li><a href="#">Confirm</a></li>
+  <li class="final"><a href="#">Completed</a></li>
+</ul>
+
+<h3>Step 2</h3>
+<ul class="cov-progressbar">
+  <li class="first"><a href="#">Start</a></li>
+  <li class="active current"><a href="#">Enter your information</a></li>
+  <li class="next"><a href="#">Payment options</a></li>
+  <li><a href="#">Confirm</a></li>
+  <li class="final"><a href="#">Completed</a></li>
+</ul>
+
+<h3>Step 3</h3>
+<ul class="cov-progressbar">
+  <li class="first"><a href="#">Start</a></li>
+  <li class="active"><a href="#">Enter your information</a></li>
+  <li class="active current"><a href="#">Payment options</a></li>
+  <li class="next"><a href="#">Confirm</a></li>
+  <li class="final"><a href="#">Completed</a></li>
+</ul>
+
+<h3>Step 4</h3>
+<ul class="cov-progressbar">
+  <li class="first"><a href="#">Start</a></li>
+  <li class="active"><a href="#">Enter your information</a></li>
+  <li class="active"><a href="#">Payment options</a></li>
+  <li class="active current"><a href="#">Confirm</a></li>
+  <li class="final next"><a href="#">Completed</a></li>
+</ul>
+
+<h3>Step 5 (complete)</h3>
+<ul class="cov-progressbar">
+  <li class="first"><a href="#">Start</a></li>
+  <li class="active"><a href="#">Enter your information</a></li>
+  <li class="active"><a href="#">Payment options</a></li>
+  <li class="active"><a href="#">Confirm</a></li>
+  <li class="final complete current"><a href="#">Completed</a></li>
+</ul>
+
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+
+<h2>Actual example (prevent multi-line)</h2>
+        <p><strong>Vehicle and insurance</strong> &gt; ICBC and Contact information &gt; Fee &gt; Pay &gt; Receipt</p>
+        <h3>Step 1 (start)</h3>
+        <ul class="cov-progressbar">
+            <li class="first current"><span>Vehicle and insurance</span></li>
+            <li class="next"><span>ICBC and Contact information</span></li>
+            <li><span>Fee</span></li>
+            <li><span>Pay</span></li>
+            <li><span>Receipt</span></li>
+            <li class="final"><span>Completed</span></li>
+        </ul>
+        <p> </p>
+        <h3>Step 2</h3>
+        <ul class="cov-progressbar">
+            <li class="first"><span>Vehicle and insurance</span></li>
+            <li class="active current"><span>ICBC and Contact information</span></li>
+            <li class="next"><span>Fee</span></li>
+            <li><span>Pay</span></li>
+            <li><span>Receipt</span></li>
+            <li class="final"><span>Completed</span></li>
+        </ul>
+        <p> </p>
+        <h3>Step 3</h3>
+        <ul class="cov-progressbar">
+            <li class="first"><span>Vehicle and insurance</span></li>
+            <li class="active"><span>ICBC and Contact information</span></li>
+            <li class="active current"><span>Fee</span></li>
+            <li class="next"><span>Pay</span></li>
+            <li><span>Receipt</span></li>
+            <li class="final"><span>Completed</span></li>
+        </ul>
+        <p> </p>
+        <h3>Step 4</h3>
+        <ul class="cov-progressbar">
+            <li class="first"><span>Vehicle and insurance</span></li>
+            <li class="active"><span>ICBC and Contact information</span></li>
+            <li class="active"><span>Fee</span></li>
+            <li class="active current"><span>Pay</span></li>
+            <li class="next"><span>Receipt</span></li>
+            <li class="final"><span>Completed</span></li>
+        </ul>
+        <p> </p>
+        <h3>Step 5</h3>
+        <ul class="cov-progressbar">
+            <li class="first"><span>Vehicle and insurance</span></li>
+            <li class="active"><span>ICBC and Contact information</span></li>
+            <li class="active"><span>Fee</span></li>
+            <li class="active"><span>Pay</span></li>
+            <li class="active current"><span>Receipt</span></li>
+            <li class="final next"><span>Completed</span></li>
+        </ul>
+        <p> </p>
+        <h3>Step 6 (complete)</h3>
+        <ul class="cov-progressbar">
+            <li class="first"><span>Vehicle and insurance</span></li>
+            <li class="active"><span>ICBC and Contact information</span></li>
+            <li class="active"><span>Fee</span></li>
+            <li class="active"><span>Pay</span></li>
+            <li class="active"><span>Receipt</span></li>
+            <li class="final complete current"><span>Completed</span></li>
+        </ul>
+
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+
+<h2>Background sprite</h2>
+<img  border="1" alt="" src="./cov-progressbar.png" style="float: none;" />
+</div>
+
+</body>
