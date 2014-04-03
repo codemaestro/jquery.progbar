@@ -8,3 +8,5 @@ CoV Progress Bar demonstrates:
 
 Enjoy!
 Tony Chung
+
+fork on GitHub: https://github.com/codemaestro/covprogbar
