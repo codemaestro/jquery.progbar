@@ -12,7 +12,6 @@ $(function( $ ){
 	
 		return this.each( function() {
 			var $bar = $(this), $step = 0;
-			$bar = $(this), $step = 0;
 			// get final step and step before final step	
 			var stepFinal = $bar.find( '.final' );
 			var stepBefore = stepFinal.siblings().index();
@@ -28,6 +27,7 @@ $(function( $ ){
 				.width( $bar.width() - $step )
 				.find( 'span, a' )
 					.css( 'width', '100%' );
+
 		});
 	}
 }( jQuery ));
